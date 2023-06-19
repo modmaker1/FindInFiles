@@ -1,0 +1,157 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+MAIN DIALOGEX 0, 0, 340, 222
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | 
+    WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "ss2"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Search what:",IDC_STATIC,6,6,42,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_SEARCH_WHAT,60,6,222,90,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "Search",IDC_SEARCH,288,6,48,14
+    PUSHBUTTON      "Options...",IDC_OPTIONS,288,24,48,14
+    CONTROL         "Match case",IDC_MATCH_CASE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,6,24,52,8
+    CONTROL         "Match whole words",IDC_MATCH_WHOLE_WORDS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,6,36,77,8
+    CONTROL         "List all occurrences",IDC_LIST_ALL_OCCURS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,90,24,72,8
+    CONTROL         "Recurse subdirs",IDC_RECURSE_SUBDIRS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,90,36,67,8
+    COMBOBOX        IDC_SRC_DIR,60,54,222,90,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Browse...",IDC_BROWSE_PATH,288,54,48,14
+    CONTROL         "Use filter:",IDC_USE_FILTER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,6,72,42,12
+    COMBOBOX        IDC_FILTER,60,72,222,90,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "",IDC_SEARCH_RESULTS,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_NOLABELWRAP | LVS_ALIGNLEFT | 
+                    LVS_NOSORTHEADER | WS_TABSTOP,6,90,330,120,
+                    WS_EX_CLIENTEDGE
+    LTEXT           "",IDC_STATUS_STRING,6,210,330,12,SS_CENTERIMAGE
+    CONTROL         "Detect Unicode (via BOM)",IDC_DETECT_UNICODE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,174,24,108,8
+    CONTROL         "Force Unicode",IDC_FORCE_UNICODE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,174,36,72,8
+    LTEXT           "Look in:",IDC_STATIC,6,54,42,12,SS_CENTERIMAGE
+END
+
+OPTIONS DIALOGEX 0, 0, 226, 121
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Options"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,120,96,48,14
+    PUSHBUTTON      "Cancel",IDCANCEL,174,96,48,14
+    LTEXT           "Command line for the 'Open' command:",IDC_STATIC,6,6,
+                    126,8
+    EDITTEXT        IDC_OPEN_WITH,12,18,210,13,ES_AUTOHSCROLL
+    LTEXT           "%f (or %F) - file name, %l (or %L) - line",
+                    IDC_OPEN_WITH_HELP,18,36,131,8
+    CONTROL         "Use shell",IDC_USE_SHELL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,48,44,10
+    CONTROL         "List directories first",IDC_DIRECTORIES_FIRST,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,6,66,77,10
+    CONTROL         "Global settings (via the registry)",IDC_GLOBAL,"Button",
+                    BS_AUTOCHECKBOX | BS_MULTILINE | NOT WS_VISIBLE | 
+                    WS_TABSTOP,6,90,101,24
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    "MAIN", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 333
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 215
+    END
+
+    "OPTIONS", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 219
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 114
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
